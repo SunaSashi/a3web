@@ -11,11 +11,11 @@ Comment: Aida explains this function in the main css page. Please refer back to 
 /* Body element added by Aida on November 15th */
 html, body {
     position: absolute;
-    margin: 0; 
     height: 100%; 
     width: 100%; 
     overflow-x: hidden;  
-    font-family: 'Raleway', sans-serif;; 
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /***********************
@@ -31,6 +31,7 @@ html, body {
     position: absolute; 
     margin-left: 0px; 
     margin-top: -45px; 
+    z-index: 5;
 }
 
 /* logo image */ 
@@ -38,7 +39,6 @@ html, body {
     height: 150px;  
 }
 /* End Owner: Aida Tuhcic */
-
 
 /* Edited by Aida Tuhcic December 7th will update with more detailed comments. */
 /*Hero image style by Sunayana*/
@@ -49,8 +49,8 @@ html, body {
     background-size: cover;
     background-position: no-repeat; 
     min-height: 10%;
+    z-index: 2;
 }
-
 
 /***********************
 * Owner: Aida Tuhcic
@@ -66,40 +66,38 @@ html, body {
 ***********************/
 
 /* slogan */
-.slogan, 
-    .h1, .p {
-    color: #ffffff;
-    text-shadow: 0 0 5px #000000;  
-    position: absolute; 
-    text-align: center; 
-    top: 50%; 
-    left: 50%;  
-    width: 100%; 
-    transform: translate(-50%, -50%); /* Source w3schools. */
-
+.slogan, .h1, .p {
+  color: #ffffff;
+  text-shadow: 0 0 5px #000000;  
+  position: absolute; 
+  text-align: center; 
+  top: 50%; 
+  left: 50%;  
+  width: 100%; 
+  transform: translate(-50%, -50%); /* Source w3schools. */
+  z-index: 3;
 }
 
 /* h1 element located in slogan class */
 .slogan h1 {
-    color: inherit; 
-    font-size: 6em;  
+  color: inherit; 
+  font-size: 6em;  
 }
 
 /* media query for slogan .h1 */
 @media all and (min-width: 414px) and (max-width: 767px) {
-    .slogan h1 {
-      padding-top: 25%; 
-      font-size: 3.2em; 
-    }
+  .slogan h1 {
+    padding-top: 25%; 
+    font-size: 3.2em; 
   }
+}
 
-  @media all and (min-width: 414px) and (max-width: 900px) {
-    .slogan h1 {
-      padding-top: 20%; 
-      font-size: 3.2em; 
-    }
+@media all and (min-width: 414px) and (max-width: 900px) {
+  .slogan h1 {
+    padding-top: 20%; 
+    font-size: 3.2em; 
   }
-
+}
 
 /* paragraph element located in slogan class */
 .slogan p {
@@ -109,13 +107,13 @@ html, body {
 
 /* media query for slogan paragraph element */
 @media all and (min-width: 414px) and (max-width: 767px) {
-    .slogan p {
-      padding-top: -25%; 
-      font-size: 1.2em; 
-    }
+  .slogan p {
+    padding-top: -25%; 
+    font-size: 1.2em; 
   }
+}
 
-  /* media query for slogan paragraph element */
+/* media query for slogan paragraph element */
 @media all and (min-width: 414px) and (max-width: 900px) {
   .slogan p {
     padding-top: -25%; 
@@ -124,14 +122,6 @@ html, body {
 }
 
 /* End Owner: Aida Tuhcic */
-
-/*About us style added by Sunayana*/
-.about{
-    text-align: center;
-	padding: 128px;
-	font-size: 16px;
-	font-style: 'Raleway';
-}
 
 /***********************
 * Owner: Aida Tuhcic
@@ -177,7 +167,6 @@ html, body {
   }
 }
 
-
 /* button arrow img */ 
 .button-arrow img {
     position: inherit; 
@@ -186,10 +175,10 @@ html, body {
 
 /* media query for button arrow img */ 
 @media all and (min-width: 414px) and (max-width: 767px) {
-    .button-arrow img {
-        position: inherit; 
-        height: 80px; 
-    }
+  .button-arrow img {
+      position: inherit; 
+      height: 80px; 
+  }
 }
 
 /* media query for button arrow img */ 
@@ -201,14 +190,16 @@ html, body {
 }
 
 /* End Owner: Aida Tuhcic */
+main {
+min-height: 100vh;
+}
 
 /* Edited by Aida Tuhcic December 7th will update with more detailed comments. */
 /* Footer style added by Terrie-Ann 17/11/2021 */
 .footer-container {
     position: relative;
-    min-height: 100vh; 
     min-width: 100vh;
-    overflow: hidden;
+
     display: block; 
 }
  
@@ -242,18 +233,18 @@ footer img {
   }
 }
 
-
 /* KEEP NAV CSS AT THE END THANK YOU! */
 /* Edited by Aida on December 7th will update/explain with more detailed comments and sources! */
 .topnav {
     background-color: #ffffff;
-    overflow: hidden;
     padding: 4px; 
+    position: fixed;
+    width: 100%;
+    z-index: 4;
 }
 
 .topnav a {
     float: right; 
-    display: block;
     color: #000000;
     text-align: center;
     padding: 14px 16px;
@@ -268,13 +259,11 @@ footer img {
 
 .topnav .icon {
     display: none;
-    box-shadow: 0 2 px 2 px - 2 px rgba(0, 0, 0, .2);
 }
 
 .dropdown {
     float: right;
     display: block; 
-    overflow: hidden;
 }
 
 .dropdown .dropbtn {
@@ -289,77 +278,80 @@ footer img {
 }
 
 .dropdown-content {
-    font-style: 'Raleway';
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 173px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  font-style: 'Raleway';
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 173px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .dropdown-content a {
-    font-style: 'Raleway';
-    float: none;
-    color: #000000;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  font-style: 'Raleway';
+  float: none;
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-.topnav a:hover, 
-.dropdown:hover 
-.dropbtn {
+.topnav a:hover, .dropdown:hover .dropbtn {
     font-style: 'Raleway';
     background-color: #85B4B4;
     color: white;
 }
 
-.dropdown-content 
-a:hover {
+.dropdown-content a:hover {
   font-style: 'Raleway';
   background-color: #c2d6d6;
   color: #000000;
 }
 
-.dropdown:hover 
-.dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
 @media screen and (max-width: 905px) {
-.topnav a:not(:first-child), .dropdown .dropbtn {
-  display: none;
-}
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
 
-.topnav a.icon {
-  float: right;
-  display: block;
-}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 905px) {
-.topnav.responsive {position: relative;}
-.topnav.responsive .icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+  .topnav.responsive {
+    position: relative;
+  }
 
-.topnav.responsive a {
-  float: none;
-  display: block;
-  text-align: center;
-}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
-.topnav.responsive .dropdown {float: none;}
-.topnav.responsive .dropdown-content {position: relative;}
-.topnav.responsive .dropdown .dropbtn {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
 
+  .topnav.responsive .dropdown {
+    float: none;
+  }
 
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
