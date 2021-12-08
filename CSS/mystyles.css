@@ -193,6 +193,15 @@ html, body {
 
 /* End Owner: Aida Tuhcic */
 
+/*About us style added by Sunayana*/
+.about{
+    text-align: center;
+	padding: 128px;
+	font-size: 16px;
+	font-style: 'Raleway';
+}
+
+
 /* Edited by Aida Tuhcic December 7th will update with more detailed comments. */
 /* Footer style added by Terrie-Ann 17/11/2021 */
 .footer-container {
