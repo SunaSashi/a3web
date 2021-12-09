@@ -494,10 +494,6 @@ div.resources {
   padding: 25px 50px 50px 150px;
 } 
 
-#tree, #tree2 {
-  font-weight: 900;
-} 
-
 div.who {
   text-align: left;
   font-weight: bold;
@@ -506,7 +502,7 @@ div.who {
   line-height: 2.0; 
   margin: 5%;
   padding: 25px 50px 50px 150px;
-  background: rgba(210,248,210, 0.1)
+  background: rgba(210,248,210, 0.3)
 } 
 
 div.cont {
