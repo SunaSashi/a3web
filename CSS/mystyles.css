@@ -502,12 +502,12 @@ div.who {
   line-height: 2.0; 
   margin: 5%;
   padding: 25px 50px 50px 150px;
-  background: rgba(210,248,210, 0.3)
+  background: rgba(210,248,210, 0.2)
 } 
 
 div.cont {
   border: none;
-  padding: 15px 32px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   background-color: #e7e7e7; 
