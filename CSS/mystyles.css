@@ -481,7 +481,7 @@ div.desc {
 
 /***************** 
 * Owner : Sunayana Sashikumar
-* Date  : Dec 8 (final)
+* Date  : Dec 8 (final), Dec 9 (edits that didn't commit before)
 * From  : https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_4val
           https://www.javatpoint.com/how-to-change-the-font-in-css
 ******************/
@@ -489,6 +489,16 @@ div.resources {
   text-align: left;
   width: 75%;
   display: block;
+  margin: 5%;
+  padding: 25px 50px 50px 150px;
+} 
+
+div.klin {
+  text-align: center;
+  width: 75%;
+  display: block;
+  margin: 5%;
+  padding: 25px 50px 50px 150px;
 } 
 
 div.who {
@@ -504,7 +514,12 @@ div.who {
 } 
 
 div.cont {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  padding: 15px 32px;
   text-align: center;
+  text-decoration: none;
+  background-color: #e7e7e7; 
   width: 100%;
   display: block;
 } 
