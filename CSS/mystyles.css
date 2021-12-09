@@ -503,10 +503,10 @@ div.who {
   font-weight: bold;
   width: 75%;
   display: block;
-  line-height: 2.0;
+  line-height: 2.0; 
   margin: 5%;
   padding: 25px 50px 50px 150px;
-  background: rgba(0, 128, 0, 0.1)
+  background: rgba(210,248,210, 0.1)
 } 
 
 div.cont {
