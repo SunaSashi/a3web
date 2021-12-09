@@ -494,7 +494,7 @@ div.resources {
   padding: 25px 50px 50px 150px;
 } 
 
-div.tree {
+#tree, #tree2 {
   font-weight: 900;
 } 
 
