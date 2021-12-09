@@ -508,8 +508,7 @@ div.who {
   line-height: 2.0;
   margin: 5%;
   padding: 25px 50px 50px 150px;
-  background-color: #ffffff;
-  opacity: 0.5;
+  background: rgba(0, 128, 0, 0.1)
 } 
 
 div.cont {
