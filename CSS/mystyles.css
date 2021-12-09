@@ -488,7 +488,6 @@ div.desc {
 ******************/
 div.resources {
   text-align: left;
-  float: left;
   width: 75%;
   display: block;
   margin: 5%;
@@ -501,7 +500,6 @@ div.tree {
 
 div.who {
   text-align: left;
-  float: left;
   font-weight: bold;
   width: 75%;
   display: block;
